@@ -21,7 +21,7 @@ const App = () => {
             yyyy: today.getFullYear(),
             mm: today.getMonth() + 1,
             dd: today.getDate(),
-            hour: 10
+            hour: today.getHours() - 1
         }
 
         const base = `${ymd.yyyy}${ymd.mm > 9 ? ymd.mm : '0' + ymd.mm}${ymd.dd}`;
